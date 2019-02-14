@@ -39,3 +39,34 @@ First Name:<input type-text id="myText01" value="Mateo"><br>
 </select>
 
 </form>
+
+<input  type=button  value="Show list"  onclick="{
+	document.getElementById('myDiv01').innerHTML=' <ol><li>this<li>is<li>awesome</ol> <br><br>'
+}">
+
+<div id="myDiv01">...</div>
+
+
+
+<input  type=button  value="Show table"  onclick="{
+	document.getElementById('myDiv02').innerHTML=' <table border=1><tr><td>1</td></tr></table><table border=1><tr><td>2</td></tr></table><table border=1><tr><td>3</td></tr></table>'
+}">
+
+<div id="myDiv02">...</div>
+
+
+
+
+
+
+<input  type=button  value="Show text"  onclick="{
+	document.getElementById('myDiv03').innerHTML='It just comes naturally'
+}">
+
+<div id="myDiv03">...</div>
+
+<input  type=button  value="Show error"  onclick="{
+ console.error('grimmdark activated')
+}">
+
+<div id="myDiv04">...</div>
