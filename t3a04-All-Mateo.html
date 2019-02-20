@@ -1,0 +1,76 @@
+<h1 align=center>All Javascript by Mateo</h1>
+
+<script>
+
+function my01(){
+  document.all.myArea01.value = 'thank god this works'
+}
+
+
+</script>
+
+<input type=text id="myText01" value="69"><br>
+<textarea id="myArea01" rows=4 cols=70>...</textarea><br>
+
+<input type=button value="output and function" onclick="{
+   my01()
+}">
+
+<input type=button value="input" onclick="{
+  document.all.myArea01.value = ''
+   for ( x = 1; x < 3; x++){
+     document.all.myArea01.value += x = '69'
+   }
+}">
+
+
+<input type=button value="loops" onclick="{
+  for ( x = 0; x < 3; x++){
+     document.all.myArea01.value += x = ', '
+
+    }
+}">
+
+<input type=button value="decisions" onclick="{
+  x = 69
+  if (x== 69){
+     document.all.myArea01.value = 'Wow a sixty nine'
+  } else {
+    document.all.myArea01 = 'Wow not a sixty nine'
+  }
+}">
+
+<input type=button value="arrays" onclick="{
+  myMax = 3
+  myArray = new Array(myMax)
+  myArray[1] = 'Mateo'
+  myArray[2] = 'Jacques'
+  myArray[3] = 'Joshua'
+  document.all.myArea01.value = ''
+  for ( x = 1; x <= myMax; x++){
+     document.all.myArea01.value += myArray[x] + ', '
+   }
+}">
+   
+<input type=button value="events onmouseover" onmouseover="{
+   document.all.myArea01.value = 'Get your mouse clicker off my button.'
+}">
+
+
+<a href="https://www.w3schools.com/tags/ref_eventattributes.asp">events site</a>
+
+<input type=button value="object example" onclick="{
+  person = {
+    firstName: 'Mateo',
+    lastName: 'De Sousa',
+    age: 17,
+    eyeColor: 'brown'
+  }
+    document.all.myArea01.value = 'The object person is ' +
+      person.firstName + ' De Sousa who is 17 years old and has brown eyes '
+}">
+
+
+<input type=button value="classes" onclick="{
+   document.all.myArea01.value = JSON.stringify(document, null, 3)
+}">
