@@ -1,1 +1,50 @@
+<h2 align=center>Move Image by Mateo </h2>
 
+<input type=text value=69 size=10 onMouseOver="{
+   this.value = 'x = ' + document.getElementById('myImage01').style.left
+}"><br>
+<hr>
+
+
+<img src="https://yt3.ggpht.com/a-/AAuE7mBTOZoaJcF5lM8-4m4OnwECj6twOBSCivod=s900-mo-c-c0xffffffff-rj-k-no" id="myImage01"  style="position:relative; left:0px; top:0px; height:100px; width:100px">
+
+
+<ol> All Different Directions
+<li>
+<input type=button value="Northwest" onclick="{
+   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+}">
+<input type=button value="Up" onclick="{
+   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+}"> 
+<input type=button value="Northeast" onclick="{
+   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+}">
+
+<li> 
+ <input type=button value="Left" onclick="{
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+}">
+ <input type=button value="Stop" onclick="{
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 0 + 'px'
+}">
+<input type=button value="Right" onclick="{
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+}">  
+
+<li>
+<input type=button value="Southwest" onclick="{
+   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+}">
+<input type=button value="Down" onclick="{
+   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+}">
+<input type=button value="Southeast" onclick="{
+   document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+}">
+
+</ol>
