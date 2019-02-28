@@ -1,1 +1,32 @@
+<html>
+<head>
 
+</head>
+
+<body background="https://www.pixelstalk.net/wp-content/uploads/2016/06/Gif-Backgrounds-Free-Download.gif" onload="myTimer = setInterval('myScroll()', 100)" onkeydown="{
+if(event.key=='w'){ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top)-5+'px'} // small 'w' key go up
+if(event.key=='a'){ document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left)-5+'px'} // small 'a' key go left
+if(event.key=='s'){ document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top)+5+'px'} // small 's' key go down
+if(event.key=='d'){ document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left)+5+'px'} // small 'd' key go right
+
+if(event.key=='ArrowUp'){ document.getElementById('myImage02').style.top = parseInt(document.getElementById('myImage02').style.top)-5+'px'} // small 'ArrowUp' key go up
+if(event.key=='ArrowLeft'){ document.getElementById('myImage02').style.left = parseInt(document.getElementById('myImage02').style.left)-5+'px'} // small 'ArrowLeft' key go left
+if(event.key=='ArrowDown'){ document.getElementById('myImage02').style.top = parseInt(document.getElementById('myImage02').style.top)+5+'px'} // small 'ArrowDown' key go down
+if(event.key=='ArrowRight'){document.getElementById('myImage02').style.left = parseInt(document.getElementById('myImage02').style.left)+5+'px'} // small 'd' key go right
+}">
+
+
+ <font color=red><h2 align=center>WASD by Mateo </h2> </font>
+
+<input type=text value=37 size=10 onMouseOver="{
+   this.value = 'x = ' + document.getElementById('myImage01').style.left
+}"><br>
+<hr>
+
+
+<img src="https://yt3.ggpht.com/a-/AAuE7mBTOZoaJcF5lM8-4m4OnwECj6twOBSCivod=s900-mo-c-c0xffffffff-rj-k-no" id="myImage01"  style="position:relative; left:0px; top:0px; height:100px; width:100px">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Calgary_Flames_Logo.svg/800px-Calgary_Flames_Logo.svg.png" id="myImage02" style="position:relative; left:0px; top:0px; height:100px; width:100px">
+
+
+</body>
+</html>
