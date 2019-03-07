@@ -1,0 +1,188 @@
+<body background=https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif">
+
+<font color=teal><h2 align=center>Collisions by Mateo </h2>
+
+<img src="https://yt3.ggpht.com/a-/AAuE7mBTOZoaJcF5lM8-4m4OnwECj6twOBSCivod=s900-mo-c-c0xffffffff-rj-k-no" id="myImage01"  style="position:absolute; z-index:-1; left:0px; top:0px; height:100px; width:100px">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Calgary_Flames_Logo.svg/800px-Calgary_Flames_Logo.svg.png" id="myImage02" style="position:absolute; z-index:-1; left:500px; top:0px; height:100px; width:100px">
+
+<script>
+
+
+function myHitOther(myImage01, myImage02){
+   left1   = parseInt(document.getElementById(myImage01).style.left)
+   right1  = left1 + parseInt(document.getElementById(myImage01).style.width)
+   top1    = parseInt(document.getElementById(myImage01).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(myImage01).style.height)
+   left2   = parseInt(document.getElementById(myImage02).style.left)
+   right2  = left2 + parseInt(document.getElementById(myImage02).style.width)
+   top2    = parseInt(document.getElementById(myImage02).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(myImage02).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+</script>
+
+<input type=text id="myLocation" value=0 size=14"><br>
+<hr>
+
+
+
+<input  type=button  value="Go right (Luna)"  onclick="{
+
+if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage01').style.left = '10px'
+       alert('You were obliterated by the Flames')
+
+   }
+
+
+   document.getElementById('myImage01').style.left = 
+      parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+
+
+
+    
+   //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+
+}"> 
+
+<input type=button value="Go left (Luna)"  onClick="{
+
+if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage01').style.left = '10px'
+       alert('You were obliterated by the Flames')
+
+   }
+
+
+   document.getElementById('myImage01').style.left = 
+      parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+
+
+
+    
+   //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+
+}"> 
+
+<input type=button value="Go up (Luna)"  onClick="{
+
+if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage01').style.left = '10px'
+       //alert('You were obliterated by the Flames')
+
+   }
+
+
+   document.getElementById('myImage01').style.top = 
+      parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
+
+
+
+    
+   //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+
+}"> 
+
+<input type=button value="Go down (Luna)"  onClick="{
+
+if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage01').style.left = '10px'
+       //alert('You were obliterated by the Flames')
+
+   }
+
+
+   document.getElementById('myImage01').style.top = 
+      parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+
+
+
+    
+   //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+
+}">
+
+<input  type=button  value="Go right (Flames)"  onclick="{
+
+if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage02').style.left = '10px'
+       //alert('Yay you killed Luna')
+
+   }
+
+
+   document.getElementById('myImage02').style.left = 
+      parseInt(document.getElementById('myImage02').style.left) + 10 + 'px'
+
+
+
+    
+   //document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+
+}"> 
+
+<input type=button value="Go left (Flames)"  onClick="{
+
+if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage02').style.left = '10px'
+       alert('Yay you killed Luna')
+
+   }
+
+
+   document.getElementById('myImage02').style.left = 
+      parseInt(document.getElementById('myImage02').style.left) - 10 + 'px'
+
+
+
+    
+   //document.getElementById('myImage02').style.top = parseInt(document.getElementById('myImage02').style.top) + 10 + 'px'
+
+}"> 
+
+<input type=button value="Go up (Flames)"  onClick="{
+
+if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage02').style.left = '10px'
+       //alert('Yay you killed Luna')
+
+   }
+
+
+   document.getElementById('myImage02').style.top = 
+      parseInt(document.getElementById('myImage02').style.top) - 10 + 'px'
+
+
+
+    
+   //document.getElementById('myImage02').style.top = parseInt(document.getElementById('myImage02').style.top) + 10 + 'px'
+
+}"> 
+
+<input type=button value="Go down (Flames)"  onClick="{
+
+if ( myHitOther('myImage01','myImage02') ){
+       document.getElementById('myImage02').style.left = '10px'
+       //alert('Yay you killed Luna')
+
+   }
+
+
+   document.getElementById('myImage02').style.top = 
+      parseInt(document.getElementById('myImage02').style.top) + 10 + 'px'
+
+
+
+    
+   //document.getElementById('myImage02').style.top = parseInt(document.getElementById('myImage02').style.top) + 10 + 'px'
+
+}">  
+
+
+</body>
