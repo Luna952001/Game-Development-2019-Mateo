@@ -1,0 +1,46 @@
+<font color=yellow><h2 align=center> 2D Arrays by Mateo</h2>
+
+<body background="https://i.pinimg.com/originals/b8/bf/86/b8bf8658dd216b2ec14a1b9a27123f20.gif">
+You make a 3x4 full array<br><br>
+
+<input type=button value="Generate 2D Array" onclick="{
+
+   document.getElementById('myDiv01').innerHTML = ''
+   let myChart = new Array() // define 1D array
+
+   myChart[0]  = new Array() // Define each row
+   myChart[1]  = new Array()
+   myChart[2]  = new Array()
+   myChart[3]  = new Array()
+   myChart[4]  = new Array()
+   myChart[5]  = new Array()
+   myChart[6]  = new Array()
+   myChart[7]  = new Array()
+   myChart[8]  = new Array()
+   myChart[9]  = new Array()
+
+   myChart[0][0] = 3        // set array elements
+   myChart[1][1] = 12
+   myChart[2][2] = 36
+   myChart[3][3] = 69
+   myChart[4][4] = 138
+   myChart[5][5] = 2
+   myChart[6][6] = 144
+   myChart[7][7] = 4
+   myChart[8][8] = 60
+   myChart[9][9] = 5
+   
+
+   // draw the array, uses multi-line back tick character and $ variables!
+   document.getElementById('myDiv01').innerHTML +=  `
+      <table border=1>
+      <tr><td>   ${myChart[0][0]} </td><td>  ${myChart[1][1]} </td><td>  ${myChart[2][2]} </td>  </tr>
+      <tr><td>   ${myChart[1][1]} </td><td>  ${myChart[9][9]} </td><td>  ${myChart[8][8]} </td>  </tr>
+      <tr><td>   ${myChart[2][2]} </td><td>  ${myChart[7][7]} </td><td>  ${myChart[6][6]} </td>  </tr>
+      <tr><td>   ${myChart[3][3]} </td><td>  ${myChart[5][5]} </td><td>  ${myChart[4][4]} </td>  </tr>
+      </table>`
+
+}"><br><br>
+
+<div id="myDiv01" >Your Chart will go here</div>
+
