@@ -18,17 +18,71 @@
 
 <div id="myDiv01">...</div>
 
-<input type=text id="myText01" value="69"><br>
+<input type=text id="myText01" value="5"><br>
 
 
 <input type=button value="Basics" onclick="{
-  	document.getElementById('myDiv01').innerHTML= 'Despacito'
+       myX = 5
+   if (myX == 5){
+       document.getElementById('myDiv02').innerHTML= 'Yes myX does equal 5. It is ' + myX
+   } else {
+      document.all.myText01.value = 'No myX was ' + myX
+   }
 }">
+
+<div id="myDiv02">...</div>
 
 <input type=button value="Middle" onclick="{
-  	document.getElementById('myDiv01').innerHTML= 'The Devil went down to Jamaica'
-}">
+  	document.getElementById('myDiv03').innerHTML= 'The Devil went down to Jamaica'
+        for (myLoop = 1; myLoop <= 3; myLoop++){
+     alert('JAMAICA not Georgia '+ myLoop)
+  }
+}"><br> 
+  
+</body>
+</html>
+
+<script> 
+var emp=["Ford","Chevrolet","Dodge"];  
+for (i=0;i<emp.length;i++){  
+document.write(emp[i] + "<br/>");  
+}  
+</script> 
+
+<script>
+var ages = [3, 10, 18, 20];
+
+function checkAdult(age) {
+  return age >= 18;
+}
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = ages.find(checkAdult);
+}
+</script>
+
+</body>
+</html>
+
+
+<div id="myDiv03">...</div>
 
 <input type=button value="Advanced" onclick="{
-  	document.getElementById('myDiv01').innerHTML= 'Shaggy only used 0.0001% of his power for this assignment'
+  	document.getElementById('myDiv04').innerHTML= 'Shaggy only used 0.0001% of his power for this assignment'
+         objectName.propertyName
+    var myCar = new Object();
+    myCar.make = 'Ford';
+    myCar.model = 'Mustang';
+    myCar.year = 1969;
+    document.all.myArea01.value = 'The stolen car is ' +
+      person.firstName + ' a 1969 Ford Mustang '
 }">
+
+<div id="myDiv04">...</div>
+
+<textarea id="myArea01" cols=60 rows=5 > Baby Driver </textarea><br>
+<select id="mySelect01" size=2>
+<option value='myOne'>Fav. Music
+<option value='myTwo'>Fav. Books
+<option value='mythree'>Fav. Board Games
+</select>
