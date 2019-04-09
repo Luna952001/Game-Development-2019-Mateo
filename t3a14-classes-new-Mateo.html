@@ -1,0 +1,39 @@
+<font color=blue><h2 align=center>Javascript Classes Introduction by Mateo</h2>
+
+<body background="https://i.pinimg.com/originals/bb/33/74/bb3374d8e59953a199f0b863bfd6a6fe.gif">
+
+<input type=text id="myNameInput" placeholder="Enter an animal name here" value="Cobra Kai">
+
+<input id="myButton130" type="button" value="Cobra Kai the Snake" onclick="{
+
+class myAnimal {
+   constructor(passName, passAge) {
+      this.myName = passName;
+      this.myAge = passAge;
+}
+myShow(){
+   document.getElementById('myDiv130').innerHTML = 'Good day sir '+ this.myName + '. You are ' 
++ this.myAge + ' years old<br>'
+    }
+}   // end class myAnimal
+    mySnake = new myAnimal('Mateo', 17)
+    mySnake.myShow()
+}"><br><br>
+<div id='myDiv130'>...</div><br>
+
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+<input type="button" value="Use ResponsiveCode" onclick="{
+    responsiveVoice.speak('Cobra Kai never dies')
+
+}"><br><br>
+
+
+<input type="button" value="initilize speak" onclick="{
+    responsiveVoice.speak('Card counting in blackjack can make you millions',
+'US English Male',
+{pitch: 1, rate: 1, volume : 1})
+}"><br><br>
+
+<img src="https://i.pinimg.com/originals/ce/20/5d/ce205ddc4bf34ef0393959ba3a0347d9.jpg" id="myImage01"  style="position:relative; left:0px; top:0px; height:100px; width:100px">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Blackjack_board.JPG/300px-Blackjack_board.JPG" id="myImage02" style="position:relative; left:0px; top:0px; height:100px; width:100px">
