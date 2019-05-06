@@ -1,0 +1,73 @@
+<font color=yellow><h2 align=center>t4a03-random-bounce-console-score-Mateo.html</h2>
+
+<body background="https://i.gifer.com/UNB6.gif">
+
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b7/Squall_Leonhart.png/220px-Squall_Leonhart.png" id="myImage01" style="position:relative;
+z-index:-1; left:0px; top:0px; height:100px; width:100px;">
+
+<input type=text id=myScore value=0>
+
+<script>
+var myLooping = 0
+var mySpeed1 = 10
+var mySpeed2 = 10
+var myDirection1 = 1 
+var myDirection2 = 1 
+var myTotal = 0
+</script>
+
+<input type=button value="auto right" onclick="{
+   clearInterval(myLooping)
+   myLooping = setInterval(function(){
+
+   mySpeed1 = (Math.floor(Math.random()*50)+5) * myDirection1
+
+   document.getElementById('myImage01').style.left = 
+   parseInt(document.getElementById('myImage01').style.left) + mySpeed1 + 'px'
+
+
+   mySpeed2 = (Math.floor(Math.random()*50)+5) * myDirection2
+
+   document.getElementById('myImage01').style.top = 
+   parseInt(document.getElementById('myImage01').style.top) + mySpeed2 + 'px'
+
+   // bounce off right side of screen
+   if (parseInt(document.getElementById('myImage01').style.left) > 1000){
+      myDirection1 = myDirection1 * -1
+      myTotal = myTotal += 1
+      document.getElementById('myScore').value = myTotal
+      document.getElementById('myImage01').style.left = 975
+}
+
+   if (parseInt(document.getElementById('myImage01').style.left) < -50){
+      myDirection1 = myDirection1 * -1
+      myTotal = myTotal += 1
+      document.getElementById('myScore').value = myTotal
+      document.getElementById('myImage01').style.left = -25
+}
+
+   if (parseInt(document.getElementById('myImage01').style.top) > 500){
+      myDirection2 = myDirection2 * -1
+      myTotal = myTotal += 1
+      document.getElementById('myScore').value = myTotal
+      document.getElementById('myImage01').style.top = 450
+}
+
+   if (parseInt(document.getElementById('myImage01').style.top) < -50){
+      myDirection2 = myDirection2 * -1
+      myTotal = myTotal += 1
+      document.getElementById('myScore').value = myTotal
+      document.getElementById('myImage01').style.top = -25
+}
+    // you write the left side bounce
+
+
+console.log(mySpeed1)
+console.log(mySpeed2)
+//console.log(myTotal)
+}, 60)
+}">
+
+
+</body>
+</html>
